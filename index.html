@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Swadhyay Sonawane</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Swadhyay Sonawane</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+
+<!-- Profile -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.gif" alt="Swadhyay Sonawane profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Namaste, I'm</p>
+        <h1 class="title">Swadhyay Sonawane</h1>
+        <p class="section__text__p2">Data Analyst| Data Scientist| Java-Full Stack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/SwadhyaySonawane_Resume-.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Swaddhyay'"
+          />
+        </div>
+      </div>
+    </section>
+
+
+<!-- About -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3 Internships & 7 Months as a Data Analyst <br />Full Stack Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Data Science (2019-2022)<br />M.C.A Data Science (2024-Persuing)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+            I'm a passionate data scientist with extensive experience in data analysis and Python development. I specialize in turning complex datasets into actionable insights, and I've worked on real-time applications like hand sign language detection and sports analysis. My interest in data science stems from a desire to solve problems and learn continuously. I'm committed to using my Python, machine learning, and data visualization skills to develop effective solutions that drive meaningful change. When I'm not working on data-driven projects, you can find me exploring the world of cricket or perfecting my latest tech experiment. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+
+<!-- Experience -->
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+      
+          <div class="about-containers">
+            <!-- Programming Languages Box -->
+            <div class="details-container" style="flex: 1;">
+              <h2 class="experience-sub-title">Programming Languages</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Java</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>R</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+      
+            <!-- Frontend Technology Box -->
+            <div class="details-container" style="flex: 1;">
+              <h2 class="experience-sub-title">Frontend Technology</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Angular</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+      
+          <div class="about-containers">
+            <!-- Backend Technology Box -->
+<div class="details-container" style="flex: 1;">
+    <h2 class="experience-sub-title">Backend Technology</h2>
+    <div class="article-container">
+      <article>
+        <img
+          src="./assets/checkmark.png"
+          alt="Experience icon"
+          class="icon"
+        />
+        <div>
+          <h3>JDBC</h3>
+          <p>Intermediate</p>
+        </div>
+      </article>
+      <article>
+        <img
+          src="./assets/checkmark.png"
+          alt="Experience icon"
+          class="icon"
+        />
+        <div>
+          <h3>Hibernate</h3>
+          <p>Intermediate</p>
+        </div>
+      </article>
+      <article>
+        <img
+          src="./assets/checkmark.png"
+          alt="Experience icon"
+          class="icon"
+        />
+        <div>
+          <h3>Spring</h3>
+          <p>Basic</p>
+        </div>
+      </article>
+    </div>
+  </div>
+  
+      
+            <!-- Database Box -->
+<div class="details-container" style="flex: 1;">
+    <h2 class="experience-sub-title">Database</h2>
+    <div class="article-container">
+      <article>
+        <img
+          src="./assets/checkmark.png"
+          alt="Experience icon"
+          class="icon"
+        />
+        <div>
+          <h3>SQL Server</h3>
+          <p>Basic</p>
+        </div>
+      </article>
+      <article>
+        <img
+          src="./assets/checkmark.png"
+          alt="Experience icon"
+          class="icon"
+        />
+        <div>
+          <h3>MySQL</h3>
+          <p>Intermediate</p>
+        </div>
+      </article>
+    </div>
+  </div>
+  
+          </div>
+      
+          <div class="about-containers">
+            <!-- Data Visualization Tools -->
+<div class="details-container" style="flex: 1;">
+    <h2 class="experience-sub-title">Data Visualization Tools</h2>
+    <div class="article-container">
+      <article>
+        <img
+          src="./assets/checkmark.png"
+          alt="Experience icon"
+          class="icon"
+        />
+        <div>
+          <h3>Tableau</h3>
+          <p>Intermediate</p>
+        </div>
+      </article>
+      <article>
+        <img
+          src="./assets/checkmark.png"
+          alt="Experience icon"
+          class="icon"
+        />
+        <div>
+          <h3>Power-BI</h3>
+          <p>Intermediate</p>
+        </div>
+      </article>
+    </div>
+  </div>
+  
+      
+            <!-- Tools & Technology -->
+<div class="details-container" style="flex: 1;">
+    <h2 class="experience-sub-title">Tools & Technology</h2>
+    <div class="article-container">
+      <article>
+        <img
+          src="./assets/checkmark.png"
+          alt="Experience icon"
+          class="icon"
+        />
+        <div>
+          <h3>Eclipse</h3>
+          <p>Intermediate</p>
+        </div>
+      </article>
+      <article>
+        <img
+          src="./assets/checkmark.png"
+          alt="Experience icon"
+          class="icon"
+        />
+        <div>
+          <h3>VS Code</h3>
+          <p>Basic</p>
+        </div>
+      </article>
+      <article>
+        <img
+          src="./assets/checkmark.png"
+          alt="Experience icon"
+          class="icon"
+        />
+        <div>
+          <h3>Excel</h3>
+          <p>Experienced</p>
+        </div>
+      </article>
+    </div>
+  </div>
+  
+          </div>
+      
+          <div class="about-containers">
+  
+          </div>
+      
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+<br> <br> <br> <br> <br> <br> <br> <br>
+
+
+
+
+<!-- Internships -->
+<section id="internships">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Internships</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        
+        <!-- Internship 1: V Chip -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/vchip_logo.jpeg"
+              alt="Internship 1"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">V Chip</h2>
+          <p class="internship-description">
+            Participated in gathering and cleaning data from various sources,
+            improving data quality by 25% through teamwork. Collaborated on
+            creating insightful visualizations with Tableau, resulting in a 10%
+            increase in data-driven insights.
+          </p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/vchip_certificate.pdf')"
+            >
+              Download Certificate
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn Profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/company/vchip/'"
+            />
+          </div>
+        </div>
+        
+        <!-- Internship 2: AutomationEdge -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/automationedge_logo.jpeg"
+              alt="Internship 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">AutomationEdge</h2>
+          <p class="internship-description">
+            Succeeded in making a data collection bot that automated the process,
+            resulting in a 50% reduction in data gathering time. Employed Python
+            for data analysis, achieving a 95% accuracy rate in identifying
+            anomalies alongside colleagues.
+          </p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/AEInternshipCertificate.pdf')"
+            >
+              Download Certificate
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn Profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/company/automationedge/'"
+            />
+          </div>
+        </div>
+        
+        <!-- Internship 3: Skills-Enrich -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/skills_enrich_logo.jpeg"
+              alt="Internship 3"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Skills-Enrich</h2>
+          <p class="internship-description">
+            Led the development of a real-time hand sign language detection
+            system, achieving an accuracy rate of 90% through teamwork. Enhanced
+            Python programming skills and implemented complex algorithms,
+            resulting in a 25% increase in system performance.
+          </p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/Skills-Enrich.pdf')"
+            >
+              Download Certificate
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn Profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/company/skills-enrich/about/'"
+            />
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+    />
+  </section>
+  
+  <br> <br> <br> <br> <br> <br> <br> <br>
+  
+
+
+<!-- Projects -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/RTHSLD.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Realtime Hand Sign Language Detection</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/PF.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Personal Portfolio</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ADCB.jpeg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Automated Data Collection Bot</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+
+<!-- Contact -->
+<section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="./assets/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:niketansonawane0@gmail.com">niketansonawane0@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p><a href="https://www.linkedin.com/in/swadhyay-sonawane-780a941aa/">LinkedIn</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="./assets/phone.png"
+          alt="Phone icon"
+          class="icon contact-icon"
+        />
+        <p><a href="tel:9999999999">+91 9623039388</a></p>
+      </div>
+    </div>
+  </section>
+  
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2022 Swadhyay Sonawane. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
